@@ -31,7 +31,7 @@ func (b *BlogEntity) Create() {
 	}
 }
 
-func (b *BlogEntity) update() {
+func (b *BlogEntity) Update() {
 	result := Db.Save(b)	
 	if result.Error != nil {
 		panic(result.Error)
