@@ -24,7 +24,7 @@ func ShowCreateBlog(c *gin.Context) {
 	c.HTML(200, "create.html", gin.H{})
 }
 
-func createBlog(c *gin.Context) {
+func CreateBlog(c *gin.Context) {
 	title := c.PostForm("titte")
 	body := c.PostForm("body")
 	data := model.BlogEntity{Title: title, Body: body}
