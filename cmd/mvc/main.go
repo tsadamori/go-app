@@ -4,5 +4,5 @@ import "github.com/tsadamori/go-app/controller"
 
 func main() {
 	router := controller.GetRouter()
-	router.Run(":8080")
+	router.Run(":8000")
 }
